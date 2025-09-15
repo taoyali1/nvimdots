@@ -76,6 +76,11 @@ local mappings = {
 			:with_silent()
 			:with_noremap()
 			:with_desc("window: Move window rightward"),
+
+		-- Plugin: render-markdown.nvim
+		["n|<leader>mr"] = map_cr("RenderMarkdown toggle"):with_noremap():with_silent():with_desc("markdown: Toggle render"),
+		["n|<leader>me"] = map_cr("RenderMarkdown enable"):with_noremap():with_silent():with_desc("markdown: Enable render"),
+		["n|<leader>md"] = map_cr("RenderMarkdown disable"):with_noremap():with_silent():with_desc("markdown: Disable render"),
 	},
 }
 
